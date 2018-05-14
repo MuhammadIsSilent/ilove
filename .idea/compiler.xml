@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo2" />
+        <module name="ilove-api" />
+        <module name="ilove-cms" />
+        <module name="ilove-common" />
+        <module name="ilove-service" />
+        <module name="ilove-ucenter" />
+        <module name="ilove-web" />
+        <module name="ilove-wechat" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin" target="1.5" />
+      <module name="api" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="dao" target="1.8" />
+      <module name="demo2" target="1.5" />
+      <module name="ilove" target="1.8" />
+      <module name="ilove-api" target="1.8" />
+      <module name="ilove-cms" target="1.8" />
+      <module name="ilove-common" target="1.8" />
+      <module name="ilove-service" target="1.8" />
+      <module name="ilove-ucenter" target="1.8" />
+      <module name="ilove-web" target="1.8" />
+      <module name="ilove-wechat" target="1.8" />
+      <module name="pay" target="1.8" />
+      <module name="service" target="1.5" />
+      <module name="ucenter" target="1.8" />
+      <module name="util" target="1.5" />
+      <module name="wachat" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

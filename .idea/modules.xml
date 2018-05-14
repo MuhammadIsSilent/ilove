@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ilove.iml" filepath="$PROJECT_DIR$/ilove.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ilove-api/ilove-api.iml" filepath="$PROJECT_DIR$/ilove-api/ilove-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ilove-cms/ilove-cms.iml" filepath="$PROJECT_DIR$/ilove-cms/ilove-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ilove-common/ilove-common.iml" filepath="$PROJECT_DIR$/ilove-common/ilove-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ilove-service/ilove-service.iml" filepath="$PROJECT_DIR$/ilove-service/ilove-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ilove-ucenter/ilove-ucenter.iml" filepath="$PROJECT_DIR$/ilove-ucenter/ilove-ucenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ilove-web/ilove-web.iml" filepath="$PROJECT_DIR$/ilove-web/ilove-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ilove-wechat/ilove-wechat.iml" filepath="$PROJECT_DIR$/ilove-wechat/ilove-wechat.iml" />
+    </modules>
+  </component>
+</project>
