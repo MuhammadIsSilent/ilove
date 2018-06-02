@@ -1,5 +1,11 @@
 server:
   port: 8089
+  servlet:
+    context-path: /
+
+  tomcat:
+    accesslog:
+      file-date-format: .yyyy:MM:dd
 spring:
   datasource:
     url: jdbc.mysql://127.0.0.1:3306/mozhe
@@ -17,7 +23,25 @@ spring:
       content-type: text/html
   resources:
     static-locations: classpath:/static/
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    jedis:
+      pool:
+        min-idle: 0
+        max-idle: 50
+        max-active: 50
+        max-wait: 1800ms
+    timeout: 2400ms
+    database: 0   # redis
 
+logging:
+  level:
+    org.springframework: ERROR
+    cn.ljzyemu.iloveweb.dao: DEBUG
+    cn.ljzyemu.iloveweb.servcie: DEBUG
+    cn.ljzyemu.iloveweb.controller: DEBUG
+  file: log/web.log
 
 
 

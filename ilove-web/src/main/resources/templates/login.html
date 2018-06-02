@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="../static/index/css/login.css">-->
+    <link rel="stylesheet" th:href="@{~/index/css/login.css}">
+</head>
+<body>
+
+
+<div id="app">
+    <div class="user-j">
+        <form id="from1" method="post" enctype="multipart/form-data">
+            <h1> 后台管理系统 </h1>
+            <div class="user-y"><input type="text" name="adminname" placeholder="账号" id="adminName"/></div>
+            <div class="user-y"><input type="password" name="adminpass" placeholder="密码" id="adminPass"/></div>
+            <div class="user-y"><input class="authcode" type="text" name="a_name" placeholder="验证码" id="cheCk"/>
+                <div id="code" class="nocode"></div>
+            </div>
+            <div class="user-y"><input type="button" id="btn" value="登录"/></div>
+            <div class="user-y">
+                <div class="forget"><a href="javaScript:void(0)">忘记密码</a></div>
+            </div>
+        </form>
+    </div>
+    <canvas></canvas>
+</div>
+
+
+<script th:src="@{~/index/plugin/jquery.min.js}"></script>
+<script th:src="@{~/index/plugin/jquery-3.3.1.min.js}"></script>
+<script th:src="@{~/index/plugin/vue.js}"></script>
+<script th:src="@{~/index/js/login.js}"></script>
+
+<!--<script src="../static/index/plugin/jquery.min.js"></script>
+<script src="../static/index/plugin/jquery-3.3.1.min.js"></script>
+<script src="../static/index/plugin/vue.js"></script>
+<script src="../static/index/js/login.js"></script>-->
+
+<script>
+
+    $.ajax({
+        url: 'http://localhost:8089/index/logout',
+        dateType: 'jsonp',
+        jsonpCallBack: 'headerResponst',
+        success: function (data) {
+            console.log(data);
+        }
+
+
+    });
+
+
+</script>
+</body>
+</html>

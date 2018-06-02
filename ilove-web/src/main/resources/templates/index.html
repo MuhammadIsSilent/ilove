@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="../static/index/css/index.css">
+
+
+</head>
+<body>
+
+<div id="app">
+    <!-- 左边菜单栏 -->
+    <aside>
+        <el-menu default-active="1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose"
+                 background-color="#545c64" text-color="#fff" :collapse="isCollapse" active-text-color="#ffd04b">
+
+            <el-menu-item index="1">
+                <i class="el-icon-menu"></i>
+                <span slot="title">系统首页</span>
+            </el-menu-item>
+
+            <el-submenu index="2">
+                <template slot="title">
+                    <i class="el-icon-menu"></i>
+                    <span>会员管理</span>
+                </template>
+                <el-menu-item index="2-1"   >
+                    <i class="el-icon-menu"></i>
+                    <span slot="title">会员管理</span>
+                </el-menu-item>
+
+                <el-menu-item index="2-2"   >
+                    <i class="el-icon-menu"></i>
+                    <span slot="title">会员添加</span>
+                </el-menu-item>
+
+            </el-submenu>
+
+            <el-menu-item index="3">
+                <i class="el-icon-document"></i>
+                <span slot="title">导航三</span>
+            </el-menu-item>
+
+            <el-menu-item index="4">
+                <i class="el-icon-document"></i>
+                <span slot="title">导航四</span>
+            </el-menu-item>
+
+            <el-menu-item index="5">
+                <i class="el-icon-document"></i>
+                <span slot="title">导航五</span>
+            </el-menu-item>
+
+        </el-menu>
+    </aside>
+
+    <!-- 右边块 -->
+    <section>
+
+    </section>
+
+</div>
+
+
+<script src="../static/index/plugin/jquery-3.3.1.min.js"></script>
+<script src="//unpkg.com/vue/dist/vue.js"></script>
+<script src="//unpkg.com/element-ui@2.3.9/lib/index.js"></script>
+<!-- 引入组件库 -->
+<script src="../static/index/js/index.js"></script>
+
+
+</body>
+</html>
