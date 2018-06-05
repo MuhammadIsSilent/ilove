@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <!--<link rel="stylesheet" href="../static/index/css/login.css">-->
-    <link rel="stylesheet" th:href="@{~/index/css/login.css}">
+    <link rel="stylesheet" href="../static/index/css/login.css">
+<!--    <link rel="stylesheet" th:href="@{~/index/css/login.css}">-->
 </head>
 <body>
 
@@ -28,30 +28,16 @@
 </div>
 
 
-<script th:src="@{~/index/plugin/jquery.min.js}"></script>
+<!--<script th:src="@{~/index/plugin/jquery.min.js}"></script>
 <script th:src="@{~/index/plugin/jquery-3.3.1.min.js}"></script>
 <script th:src="@{~/index/plugin/vue.js}"></script>
-<script th:src="@{~/index/js/login.js}"></script>
+<script th:src="@{~/index/js/login.js}"></script>-->
 
-<!--<script src="../static/index/plugin/jquery.min.js"></script>
+<script src="../static/index/plugin/jquery.min.js"></script>
 <script src="../static/index/plugin/jquery-3.3.1.min.js"></script>
 <script src="../static/index/plugin/vue.js"></script>
-<script src="../static/index/js/login.js"></script>-->
-
-<script>
-
-    $.ajax({
-        url: 'http://localhost:8089/index/logout',
-        dateType: 'jsonp',
-        jsonpCallBack: 'headerResponst',
-        success: function (data) {
-            console.log(data);
-        }
+<script src="../static/index/js/login.js"></script>
 
 
-    });
-
-
-</script>
 </body>
 </html>

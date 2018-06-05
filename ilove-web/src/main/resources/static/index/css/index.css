@@ -3,8 +3,12 @@ body, *, ul, a {
     padding: 0px;
     text-decoration: none;
 }
-#app{   }
-aside{ width: 250px;}
+
+#app {
+    width: auto;
+    height: auto;
+}
+
 
 
 
